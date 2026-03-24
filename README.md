@@ -4,6 +4,8 @@ LangGraph Complete Course for Beginners – Complex AI Agents with Python
 
 Video Reference: https://youtu.be/jGg_1h0qzaM?si=izp7aHQTxQxdiajz
 
+Github repo: https://github.com/iamvaibhavmehra/LangGraph-Course-freeCodeCamp/tree/main
+
 ## 📚 Repository Contents
 
 This repository demonstrates LangGraph usage through interactive Jupyter notebooks. It is organized by progressive exercises:
