@@ -8,8 +8,9 @@ Github repo: https://github.com/iamvaibhavmehra/LangGraph-Course-freeCodeCamp/tr
 
 ## 📚 Repository Contents
 
-This repository demonstrates LangGraph usage through interactive Jupyter notebooks. It is organized by progressive exercises:
+This repository demonstrates LangGraph usage through interactive Jupyter notebooks and standalone scripts. It is organized by progressive exercises:
 
+- `Agent_Bot.py`: interactive AI chatbot using LangGraph with Azure OpenAI integration. Features a simple state graph that processes user messages in a loop until "exit" is typed. Requires Azure OpenAI credentials in a `.env` file.
 - `Hello_World_Graph.ipynb`: first graph example, simple state update in one node
 - `exercise_1.ipynb`: single node introduction with a compliment transformation
 - `exercise_2.ipynb`: multi-input node (math add/multiply) plus operation routing
@@ -29,10 +30,19 @@ source .venv/bin/activate
 2. Install dependencies:
 
 ```bash
-pip install langgraph ipython
+pip install langgraph ipython langchain-openai python-dotenv
 ```
 
-3. Launch Jupyter:
+3. For `Agent_Bot.py`, create a `.env` file with your Azure OpenAI credentials:
+
+```bash
+AZURE_OPENAI_ENDPOINT=your-endpoint
+AZURE_OPENAI_API_KEY=your-api-key
+AZURE_OPENAI_API_VERSION=2024-12-01-preview
+AZURE_OPENAI_DEPLOYMENT_NAME=your-deployment-name
+```
+
+4. Launch Jupyter:
 
 ```bash
 jupyter notebook
